@@ -11,12 +11,13 @@
       <button class="pure-button pure-button-active" id="tab_dialer"> Dialer</button>
       <button class="pure-button pure-button-active" id="tab_list"> Contact List</button>
       <button class="pure-button pure-button-active" id="tab_add"> Add Contact</button>
+      <button class="pure-button pure-button-active" id="tab_gesture"> Test Gesture</button>
     </div>
     <div class="classname" id="content" align="center">
       <div class="classname" id="content_dialer">
 				<form class="pure-form pure-form-stacked" >
-	  			<label for="dialer">Dialer</label>
-	  			<input id="dialer" placeholder="123456789">
+	  			<label for="dialerIn">Dialer</label>
+	  			<input id="dialerIn" placeholder="123456789" type="tel">
 				</form>
 				<div id="buttGrp123">
     			<button class="buttnums" id="butt1">1</button>
@@ -34,9 +35,9 @@
     			<button class="buttnums" id="butt9">9</button>
        	</div>
 				<div  id="buttGrp0">
-    			<button class="buttnums" id="butt*">*</button>
+    			<button class="buttnums" id="buttStar">*</button>
     			<button class="buttnums" id="butt0">0</button>
-    			<button class="buttnums" id="butt#">#</button>
+    			<button class="buttnums" id="buttHash">#</button>
        	</div>
 				<div  id="buttGrpDialClear">
     			<button class="buttContacts" id="buttDial">Dial</button>
@@ -71,9 +72,16 @@
 	  			<label for="email">Email Address</label>
 	  			<input id="email" placeholder="Jim.Smith@colorado.edu">
 				</form>
-				<button class="pure-button" id="add_save"> Add Contact</button>
-				<button class="pure-button" id="add_clear"> Clear</button>
+				<button class="buttContacts" id="add_save"> Add Contact</button>
+				<button class="buttContacts" id="add_clear"> Clear</button>
       </div>
+			<div class="classname" id="content_gesture">
+				<form class="pure-form pure-form-stacked" >
+	  			<label for="gesture_output">Gesture Practice</label>
+	  			<input id="gesture_output" placeholder="ready" type="text">
+				</form>
+				<div class="classname" id="gesture_area"></div>
+			</div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="phone.js"></script>
