@@ -1,0 +1,81 @@
+<!-- This is a comment -->
+
+<html>
+	<head>
+		<title>Jackson Phone</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="phone.css">
+	</head>
+	<body>
+    <div class="pure-button-group" id="tab_bar" margin="30px" align="center">
+      <button class="pure-button pure-button-active" id="tab_dialer"> Dialer</button>
+      <button class="pure-button pure-button-active" id="tab_list"> Contact List</button>
+      <button class="pure-button pure-button-active" id="tab_add"> Add Contact</button>
+    </div>
+    <div class="classname" id="content" align="center">
+      <div class="classname" id="content_dialer">
+				<form class="pure-form pure-form-stacked" >
+	  			<label for="dialer">Dialer</label>
+	  			<input id="dialer" placeholder="123456789">
+				</form>
+				<div id="buttGrp123">
+    			<button class="buttnums" id="butt1">1</button>
+    			<button class="buttnums" id="butt2">2</button>
+    			<button class="buttnums" id="butt3">3</button>
+       	</div>
+				<div id="buttGrp456">
+    			<button class="buttnums" id="butt4">4</button>
+    			<button class="buttnums" id="butt5">5</button>
+    			<button class="buttnums" id="butt6">6</button>
+       	</div>
+				<div id="buttGrp789">
+    			<button class="buttnums" id="butt7">7</button>
+    			<button class="buttnums" id="butt8">8</button>
+    			<button class="buttnums" id="butt9">9</button>
+       	</div>
+				<div  id="buttGrp0">
+    			<button class="buttnums" id="butt*">*</button>
+    			<button class="buttnums" id="butt0">0</button>
+    			<button class="buttnums" id="butt#">#</button>
+       	</div>
+				<div  id="buttGrpDialClear">
+    			<button class="buttContacts" id="buttDial">Dial</button>
+    			<button class="buttContacts" id="buttClear">Clear</button>
+       	</div>
+      </div>
+      <div class="classname" id="content_list">
+        Contact List
+				<div id="contacts">
+					<button class = "buttContacts">Nikolay Andreivitch Bolkonsky</button>
+					<button class = "buttContacts">Andrey Bolkonsky</button>
+					<button class = "buttContacts">Marya Bolkonsky</button>
+					<button class = "buttContacts">Mademoiselle Bourienne</button>
+					<button class = "buttContacts">Nikolushka</button>
+					<button class = "buttContacts">Vladmirovitch Bezuhov</button>
+					<button class = "buttContacts">Ilya Rostov</button>
+					<button class = "buttContacts">Natalya Rostov</button>
+					<button class = "buttContacts">Boris Drubetskoy</button>
+				</div>
+			</div>
+      <div class="classname" id="content_add">
+        Add Contact
+				<form class="pure-form pure-form-stacked">
+	  			<label for="name">Name</label>
+	  			<input id="name" placeholder="Jim Smith">
+				</form>
+				<form class="pure-form pure-form-stacked">
+	  			<label for="phoneNum">Phone Number</label>
+	  			<input id="phoneNum" placeholder="123-456-789">
+				</form>
+				<form class="pure-form pure-form-stacked">
+	  			<label for="email">Email Address</label>
+	  			<input id="email" placeholder="Jim.Smith@colorado.edu">
+				</form>
+				<button class="pure-button" id="add_save"> Add Contact</button>
+				<button class="pure-button" id="add_clear"> Clear</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="phone.js"></script>
+  </body>
+</html>
