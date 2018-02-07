@@ -80,25 +80,37 @@ $("#add_clear").click(function(){
 $("#gesture_area").click(function(){
   var downX = 0;
   var downY = 0;
-  var upX;
-  var upY;
+  var upX = 0;
+  var upY = 0;
   $("#gesture_area").mouseup(function(){
-    upX = event.pageX
-    upY = event.pageY
-    if (upX < downX){
-      $("#gesture_output").val("Swipe left")
+    upX = event.pageX;
+    upY = event.pageY;
+    var diffX = Math.abs(upX-downX);
+    var diffY = Math.abs(upY-downY);
+    if(diffX >= diffY){
+      if (upX < downX){
+        $("#gesture_output").val("Swipe left")
+      }
+      else if (upX > downX){
+        $("#gesture_output").val("Swipe right")
+      }
     }
-    else if (upX > downX){
-      $("#gesture_output").val("Swipe right")
+    else if(diffY > diffX){
+      if (upY < downY){
+        $("#gesture_output").val("Swipe up")
+      }
+      else if (upY > downY){
+        $("#gesture_output").val("Swipe down")
+      }
     }
-    else if (upX == downX){
+    else {
       $("#gesture_output").val("Mouse up")
     }
   });
   $("#gesture_area").mousedown(function(event){
     $("#gesture_output").val("Mouse Down")
     downX = event.pageX
-    downY = event.pageX
+    downY = event.pageY
   });
 
 });
