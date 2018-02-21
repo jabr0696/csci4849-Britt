@@ -108,7 +108,7 @@ $("#gesture_area").click(function(){
     }
   });
   $("#gesture_area").mousedown(function(event){
-    $("#gesture_output").val("Mouse Down")
+    $("#gesture_output").val("Mouse down")
     downX = event.pageX
     downY = event.pageY
   });
