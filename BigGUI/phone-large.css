@@ -1,0 +1,85 @@
+.buttnums {
+  width: 80px;
+  height: 68px;
+  background: black;
+  color: white;
+  font-size: 40px;
+  margin: 2px;
+  border-color:  white;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.3s;
+}
+.tabClass{
+  width: auto;
+  height: 68px;
+  background: black;
+  color: white;
+  font-size: 40px;
+  margin: 2px;
+  border-color:  white;
+  border-radius: 4px;
+}
+.buttnums:hover {
+    background-color: blue; /* Green */
+    color: white;
+}
+#dialerIn{
+  font-size: 40px;
+  background-color: #000;
+  color: white;
+}
+#name{
+  font-size: 40px;
+  background-color: #000;
+  color: white;
+}
+#phoneNum{
+  font-size: 40px;
+  background-color: #000;
+  color: white;
+}
+#email{
+  font-size: 40px;
+  background-color: #000;
+  color: white;
+}
+#content{
+  background-color: #000;
+}
+#tab_bar{
+  background: #000;
+}
+#aboutP{
+  padding: 20px;
+  color: white;
+  font-size: 36px;
+}
+#toggle{
+  font-size: 30px;
+  color: white;
+}
+#aboutH2{
+  font-size: 40px;
+  color:white;
+}
+label{
+  font-size: 60px;
+  color: white;
+}
+.buttContacts {margin: 4px;
+  padding: 8px;
+  width: auto;
+  height: 68px;
+  font-size: 40px;
+  background: black;
+  color: white;
+  border-color: white;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.2s;
+}
+.buttContacts:hover {
+    background-color: blue; /* Green */
+    color: white;
+}

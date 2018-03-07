@@ -1,0 +1,30 @@
+.buttnums {
+  width: 40px;
+  height: 34px;
+  background: green;
+  color: white;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.3s;
+}
+.buttnums:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.buttContacts {margin: 4px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.2s;
+}
+.buttContacts:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#aboutP{
+  margin: 20px;
+}
